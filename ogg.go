@@ -142,7 +142,7 @@ func Decode(in io.Reader) error {
     }
     if page.Header_type&0x4 != 0 {
       close(cb.codec.Input())
-      streams[serial] = nil, false
+      streams[serial] = nil
     }
   }
   if err == nil {
